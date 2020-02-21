@@ -15,9 +15,6 @@ export default Header
 </script>
 
 <style lang="scss" scoped>
-.st-header {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
-}
 .st-header__inner {
   height: 60px;
   display: flex;

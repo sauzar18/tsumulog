@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "location": "渋谷",
+    "name": "渋DRA",
+    "genre": "イタリアン",
+    "description": "いつも活気溢れる店内は、ワイワイ賑やかなバルスタイル。気さくな店員さんと会話を楽しめるカウンター席や、デート・女子会にオススメの2名～4名用の少人数席、さらにパーティー用の20名以上用のお席などシーンに合わせて使いやすいのが渋DRAの魅力の1つです。",
+    "thumbnail": "images/202002/ref_shibudora01.jpg",
+    "url": "https://dreamon.owst.jp/",
+    "images": [
+      { "id": 1, "src": "images/202002/ref_shibudora01.jpg", "alt": "フォアグラと牛フィレ肉のロッシーニ" }
+    ],
+    "address": "東京都渋谷区渋谷１丁目２５−６ B1階 パークサイド共同ビル",
+    "instagram": "https://www.instagram.com/shibudra/?hl=ja",
+    "maps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7010454513465!2d139.69933861642488!3d35.659736538755475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b55dd650bf3%3A0x2be3c75fb6151371!2z5riLRFJB!5e0!3m2!1sja!2sus!4v1582273193602!5m2!1sja!2sus"
+  }
+]

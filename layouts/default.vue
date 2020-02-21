@@ -22,6 +22,25 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+main {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+address,
+i,
+em {
+  font-style: normal;
 }
 .st-container {
   width: 1024px;
@@ -35,11 +54,15 @@ html {
 }
 .orange {
   background-color: #ffa952;
+  color: #fff;
 }
 .red {
   background-color: #ef5a5a;
 }
 .white {
   background-color: #ffffff;
+}
+.text-orange {
+  color: #ffa952;
 }
 </style>
