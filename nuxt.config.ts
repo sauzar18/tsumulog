@@ -17,7 +17,8 @@ const config: Configuration = {
       { name: 'twitter:site', content: '@slboy18' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=japanese' }
     ]
   },
   /*

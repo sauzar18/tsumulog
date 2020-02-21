@@ -24,6 +24,9 @@ html {
   margin: 0;
   padding: 0;
 }
+.ft-kosugi {
+  font-family: 'Kosugi Maru';
+}
 li {
   list-style: none;
 }
@@ -43,7 +46,7 @@ em {
   font-style: normal;
 }
 .st-container {
-  width: 1024px;
+  width: 96%;
   margin: 0 auto;
 }
 .thin {
@@ -64,5 +67,8 @@ em {
 }
 .text-orange {
   color: #ffa952;
+}
+.text-red {
+  color: #ef5a5a;
 }
 </style>

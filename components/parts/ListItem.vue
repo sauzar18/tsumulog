@@ -1,27 +1,49 @@
 <template>
-  <n-link
-    :to="`/${article.id}`"
-    class="st-item"
-  >
-    <article>
-      <div>
-        <h3 class="text-orange">
-          {{ article.name }}
-        </h3>
-        <address>{{ article.address }}</address>
-        <p>{{ article.description }}</p>
-      </div>
-      <figure>
-        <img
-          :src="article.thumbnail"
-          :alt="article.name"
+  <article class="st-item">
+    <div>
+      <h3 class="ft-kosugi">
+        <a
+          :href="article.url"
+          target="_blank"
+          rel="noopener"
+          class="text-red"
         >
-        <figcaption class="orange">
-          {{ article.genre }}
-        </figcaption>
-      </figure>
-    </article>
-  </n-link>
+          {{ article.name }}
+        </a>
+      </h3>
+      <address>
+        <a
+          :href="article.maps"
+          target="_blank"
+          rel="noopener"
+        >
+          {{ article.address }}
+        </a>
+      </address>
+      <p>{{ article.description }}</p>
+      <div class="st-sns">
+        <a
+          v-if="article.instagram"
+          :href="article.instagram"
+          target="_blank"
+          rel="noopener"
+        >
+          <i>
+            <img src="~static/images/instagram.svg" alt="instagram">
+          </i>
+        </a>
+      </div>
+    </div>
+    <figure>
+      <img
+        :src="article.thumbnail"
+        :alt="article.name"
+      >
+      <figcaption class="orange">
+        {{ article.genre }}
+      </figcaption>
+    </figure>
+  </article>
 </template>
 
 <script lang="ts">
@@ -34,20 +56,13 @@ export default ListItem
 </script>
 
 <style lang="scss" scoped>
-a {
-  display: block;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
-  color: #000;
-  padding: 10px;
-  border-radius: 4px;
-  &:hover,
-  &:focus {
-    background-color: #efefef;
-  }
-}
 article {
   display: flex;
   flex-direction: row-reverse;
+  width: 100%;
+  > div {
+    width: 100%;
+  }
 }
 figure {
   display: flex;
@@ -75,7 +90,15 @@ img {
   object-position: center;
 }
 h3 {
+  line-height: 1.7;
   margin-bottom: 8px;
+  font-size: 20px;
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 p {
   font-size: 16px;
@@ -83,6 +106,23 @@ p {
 address {
   font-size: 14px;
   margin-bottom: 7px;
-  color: rgb(143, 143, 143);
+  a {
+    color: rgb(143, 143, 143);
+    &:hover,
+    &:focus {
+      color: #000;
+    }
+  }
+}
+.st-sns {
+  display: flex;
+  margin-top: 10px;
+  i {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 30px;
+  }
 }
 </style>

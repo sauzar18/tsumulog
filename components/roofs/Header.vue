@@ -1,7 +1,9 @@
 <template>
-  <header class="st-header white">
+  <header class="st-header orange">
     <div class="st-header__inner st-container">
-      <h1>つむログ</h1>
+      <h1 class="ft-kosugi">
+        つむログ
+      </h1>
     </div>
   </header>
 </template>
@@ -22,5 +24,6 @@ export default Header
 }
 h1 {
   font-size: 27px;
+  color: #FFF;
 }
 </style>

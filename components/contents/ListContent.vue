@@ -39,4 +39,10 @@ h2 {
   border-bottom: 2px solid #ffa952;
   margin-bottom: 16px;
 }
+li {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 </style>

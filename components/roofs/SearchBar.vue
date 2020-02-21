@@ -1,12 +1,17 @@
 <template>
   <nav class="st-searchbar">
-    <h2>絞り込み検索</h2>
-    <input-field
-      id="filterWord"
-      v-model="filterWord"
-      label="絞りこみ検索"
-      type="text"
-    />
+    <div>
+      <h2>絞り込み検索</h2>
+      <input-field
+        id="filterWord"
+        v-model="filterWord"
+        label="絞りこみ検索"
+        type="text"
+      />
+    </div>
+    <figure>
+      <img src="~static/images/ref_nomikai.jpg" alt="月一飲み会">
+    </figure>
   </nav>
 </template>
 
@@ -27,11 +32,19 @@ export default SearchBar
 .st-searchbar {
   width: 320px;
   padding: 16px;
-  border-top: 2px solid #ffa952;
+  display: flex;
+  flex-direction: column;
 }
 h2 {
   font-size: 16px;
   margin-bottom: 16px;
   font-weight: normal;
+}
+figure {
+  width: 100%;
+  margin-top: auto;
+}
+img {
+  width: 100%;
 }
 </style>
